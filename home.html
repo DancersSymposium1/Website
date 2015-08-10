@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sandy Jiang">
+        <meta name="designer" content="Sandy Jiang">
+        <meta name="keywords" content="ds, cmu ds, dancers' symposium, cmu dance, cmu dance groups, carnegie mellon dance">
+        <meta name="description" content="CMU Dancers' Symposium">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CMU DS</title>
+
+        <link rel="stylesheet" href="mainStyle.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="Images\logo_icon.ico">
+
+        <style>
+            
+            #home_background {
+                background: url(Images/pulse_bkgd.jpg) no-repeat center center;
+                background-size:  cover;
+                -webkit-background-size: cover;
+			    -o-background-size:cover;
+			    -moz-background-size:cover;
+            }
+            
+             #background-title {
+                display: table;
+                width: 100%;
+                margin-top: -100px;
+            }
+                       
+            #title-container {
+                display: none;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            #title {
+                font-family: 'Pacifico', Consolas, 'Lucida Console';
+                font-size:  110px;
+                transition: all 0.5s;
+                color: white;
+            }
+            
+            #title:hover { 
+                opacity:  0.6;
+                color:  #c8c8c8;
+                transition: all 0.5s;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="background-container" id="home_background"></div>
+        <div class="background-container" id="background-title">
+            <div id="title-container">
+                <a  id="title" href="about.html">cmu dancers' symposium</a>
+            </div>
+        </div>
+
+        <!-- Javascripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#title-container').fadeIn(2500).css("display","table-cell");
+            });
+	    </script>
+
+    </body>
+</html>
+

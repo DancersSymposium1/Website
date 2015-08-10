@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sandy Jiang">
+        <meta name="designer" content="Sandy Jiang">
+        <meta name="keywords" content="ds, cmu ds, dancers' symposium, cmu dance, cmu dance groups, carnegie mellon dance">
+        <meta name="description" content="CMU Dancers' Symposium">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CMU DS: About</title>
+
+        <link rel="stylesheet" href="mainStyle.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="Images\logo_icon.ico">
+    </head>
+    <body>
+        <div class="navbar">
+            <img id="logo" src="Images/logo.png" alt="logo" style="height: 30px"/>
+            <nav>
+                <a href="home.html">Home</a>
+                <a class="active" href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="infra.html">Infra</a>
+                <a href="soulstylz.html">Soulstylz</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id="page-content">
+            <div class="back-container short" >
+                <div class="back-image short" style="background-image: url(Images/confetti.jpg)">
+                        <div class="back-text">
+                            <div class="col one-third back-black full">
+                                <h1>About Dancers' Symposium</h1>
+                                <p>Dancers' Symposium (DS) aims to provide an open and supportive environment to further the exposure of dance, music, student choreography, and student performance at Carnegie Mellon University. DS is CMU's largest student-run dance organization, with over 100 members each semester.</p>
+                                <h1>History</h1>
+                                <p>DS was founded in 1990 by a group of faculty and students to provide an opportunity for graduate and undergraduate students to choreograph and perform original dance pieces for their peers, faculty, and family.</p>
+                            </div>
+                            <div class="col two-third"></div>
+                        </div>
+                </div>
+            </div>
+            <div class="back-container tall">
+                <div class="back-image tall" style="background-image:  url(Images/black_texture.jpg)">
+                    <section>
+                        <div class="row table">
+                            <div class="col one-third back-black full"><h1>Who's Who in DS?</h1></div>
+                            <div class="col one-fourth"></div>
+                            <div class="col one-half full">
+                                <ul id="who-list">
+                                    <li><a class="list-active" id="list-dancers" onclick="changeWho('dancers')">Dancers</a></li>
+                                    <li><a id="list-choreographers" onclick="changeWho('choreographers')">Choreographers</a></li>
+                                    <li><a id="list-directors" onclick="changeWho('directors')">Directors</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="who-active" id="dancers" class="who">
+                                <div class="col one-half">
+                                    <h2>Dancers</h2>
+                                    <p>Over 130 dancers participate in our annual show each semester, performing in styles from contemporary to tap to hip hop. Our members range from studio-trained dancers who rocked the competition circuit to people who had never danced before DS.</p>
+                                    <p>All are welcome to audition, no matter what your skill level--we love seeing new talent! For more information on how to join DS and the audition process, click <a href="auditions.html">here</a>. For even more information, feel free to <a href="contact.html">contact us!</a></p>
+                                </div>
+                                <div class="col one-half">
+                                    <img src="Images/notaboutsex.jpg" alt="Lina/Sabrina S15">
+                                </div>
+                            </div>
+                            <div id="choreographers">
+                                <div class="col one-half">
+                                    <h2>Choreographers</h2>
+                                    <p>Each semester, about 20 dancers choose to choreograph their own pieces, and are given full authority--from choosing to dancers to choosing costumes to choosing songs. <a href="auditions.html#choreo_auditions">Find out</a> how to become a choreographer for our fall 2015 show!</p>
+                                    <p>DS: Rewind (Spring '15) Choreographers included: So-Hee Woo, Madeline Hyde, Lisa Natale, Amy Lee, Sam Ahmed, Eric Wong, Job Bedford, Carlos Domene, Jackie Lee, Mindy Pile, Karin Tsai, Emily Mooney, Kaalen Kirrene, Kelsey Scott, Terence An, Katie Bradford, Jaimee Fair, Michelle Cho, David Buzzell, Karon Hawkins, Angelina Sung, Sabrina Liu, and James Harvey.</p>
+                                </div>
+                                <div class="col one-half">
+                                    <img src="Images/s15_sam.jpg" alt="Sam S15">
+                                </div>
+                            </div>
+                            <div id="directors">
+                                <div class="col one-third">
+                                    <p>The directors are a group of 4-6 members of DS responsible for allocating funds, scheduling space, and organizing the show and other events. Directors are chosen at the end of eligible semesters.</p>
+                                </div>
+                                <div class="col one-third">
+                                    <h2>Directors</h2>
+                                    <p>Your current (Fall '15 - Spring '16) Directors are:</p>
+                                </div>
+                                    
+                                <ul id="director-list" class="center">
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="jackie" src="Images\jackie.png" alt="Jackie Lee" onmouseover="onHover('jackie');" onmouseout="offHover('jackie');">
+                                            <figcaption>Jackie Lee<br>Neuroscience '16</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="elisa" src="Images\elisa.png" alt="Elisa Pabon" onmouseover="onHover('elisa');" onmouseout="offHover('elisa');">
+                                            <figcaption>Elisa Pabon<br>BioPsych'16</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="michelle" src="Images\michelle.png" alt="Michelle Cho" onmouseover="onHover('michelle');" onmouseout="offHover('michelle');">
+                                            <figcaption>Michelle Cho<br>Business '17</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="david" src="Images\david.png" alt="David Buzzell" onmouseover="onHover('david');" onmouseout="offHover('david');">
+                                            <figcaption>David Buzzell<br>ECE, Music Tech '17</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="sandy" src="Images\sandy.png" alt="Sandy Jiang" onmouseover="onHover('sandy');" onmouseout="offHover('sandy');">
+                                            <figcaption>Sandy Jiang<br>CS '18</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <figure class="directors">
+                                            <img id="nicole" src="Images\nicole.png" alt="Nicole Nyman" onmouseover="onHover('nicole');" onmouseout="offHover('nicole');">
+                                            <figcaption>Nicole Nyman<br>Neuroscience '18</figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       </section>
+                    </div>
+                </div>
+            
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/opener.jpg)">
+                </div>
+            </div>
+            
+            <footer>
+                <p>CMU Dancers' Symposium | 2015 | Site by Sandy Jiang</p>
+            </footer>
+
+        </div>
+
+
+
+        <!-- Javascripts-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#page-content').fadeIn(2000);
+            });
+
+            function changeWho(x) {
+                var active = $(".who-active");
+                if (active != null) {
+                    $(".who-active").fadeOut(200);
+                    $(".who-active").attr('class', '');
+                    $(".list-active").attr('class', '');
+                }
+                $("#" + x).fadeIn(200);
+                $("#" + x).attr('class', 'who-active');
+                $("#list-" + x).attr('class', 'list-active');
+            }
+
+            function onHover(person) {
+                var imgName = 'Images/' + person + '_action.jpg';
+                $('#' + person).attr('src', imgName).animate('slow');
+            }
+
+            function offHover(person) {
+                var imgName = 'Images/' + person + '.png';
+                $('#' + person).attr('src', imgName);
+            }
+        </script>
+    </body>
+</html>

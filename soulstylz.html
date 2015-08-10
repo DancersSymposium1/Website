@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="Sandy Jiang">
+        <meta name="designer" content="Sandy Jiang">
+        <meta name="keywords" content="ds, cmu ds, dancers' symposium, cmu dance, cmu dance groups, carnegie mellon dance">
+        <meta name="description" content="CMU Dancers' Symposium">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CMU DS: Soulstylz</title>
+
+        <link rel="stylesheet" href="mainStyle.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+        <link rel="shortcut icon" href="Images\logo_icon.ico">
+    </head>
+    <body>
+        <div class="navbar">
+            <img id="logo" src="Images/logo.png" alt="logo" style="height: 30px"/>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="infra.html">Infra</a>
+                <a class="active" href="soulstylz.html">Soulstylz</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <div id="page-content">
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/soul_logo.jpg)">
+                </div>
+            </div>
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/black_texture.jpg)">
+                    <div class="row">
+                        <div class="col one-half">
+                            <h1>About Soulstylz</h1>
+                            <p>Soulstylz is an advanced hip hop group that is comprised of skilled dancers that come from a wide variety of dance backgrounds.</p>
+                            <p>Through the combination of choreography and freestyle dancers, Soulstylz looks to create unique, student-choreographed pieces that let dancers relish in a hip hop community.</p>
+                            <p>We perform in shows including LG, DS, RAW, and others, and are always looking for talented dancers to join our family.</p> 
+                        </div>
+                        <div class="col one-half">
+                            <img src="Images/soul_lg2.jpg" alt="Fall '14" height="350px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/soul_dss.jpg)">
+                </div>
+            </div>
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/black_texture.jpg)">
+                    <div class="row">
+                        <div class="col one-half">
+                            <h1>Dancers</h1>
+                            <p>Current members (Spring '15) include: So-Hee Woo (Director), Karon Hawkins, Jaimee Fair, James Harvey, Karin Tsai, Michelle Cho, Josh Kim, Sabrina Liu, Sabrina Estudillo, and Sarah Deluty. Free-stylers include Karon Hawkins, Terence An, James Harvey, Terence Mims, and Dan Kim.</p>
+                            <p>For more information on how to join this feisty group, click <a href="auditions.html#infra_soul_auditions">here</a>.</p>
+                            <br>
+                            <h1>Soulstylz Around Campus</h1>
+                            <p>Soulstylz members teach many of the open classes held by DS every week, entertaining our community with killer moves and choreography. Soul also performs in Community Collage and other shows on campus and around Pittsburgh.</p>
+                        </div>
+                        <div class="col one-half">
+                            <div style="display: table">
+                                <div class="arrow-container">
+                                    <a class="arrows" onclick="slide('left')"><img src="Images/arrow_left.png" alt="left arrow"></a>
+                                </div>
+                                <div id="slide-container">
+                                    <figure id="img_1" class="slide-active">
+                                        <img src="Images/soul.jpg" alt="RAW" height="380px">
+                                        <figcaption>Soulstylz at RAW: Pittsburgh</figcaption>
+                                    </figure>
+                                    <figure id="img_2" class="slide">
+                                        <img src="Images/fall14_soul.jpg" alt="DS" height="380px">
+                                        <figcaption>Soulstylz in DS: Blur</figcaption>
+                                    </figure>
+                                    <figure id="img_3" class="slide">
+                                        <img src="Images/soul_seniors.jpg" alt="Seniors" height="350px">
+                                        <figcaption>Seniors after their last DS Show</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="arrow-container">
+                                    <a class="arrows" onclick="slide('right')"><img src="Images/arrow_right.png" alt="left arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back-container short">
+                <div class="back-image short" style="background-image: url(Images/soul_lg.jpg)">
+                    <div class="row">
+                        <div class="col one-third back-black">
+                            <h1>Contact Us</h1>
+                            <h3>If you have any questions about Soulstylz or the audition process, feel free to email Josh Kim at soulstylzcmu@gmail.com.</h3>
+                            <a href="https://www.facebook.com/soulstylzdance"><img class="social-media" src="Images/fb.png" alt="facebook"></a>
+                        </div>
+                        <div class="col two-third"></div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>CMU Dancers' Symposium | 2015 | Site by Sandy Jiang</p>
+            </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#page-content').fadeIn(2000);
+            });
+
+            function slide(x) {
+                var slides = ['img_1', 'img_2', 'img_3'];
+                var activeId = $(".slide-active").attr('id');
+                var i = slides.indexOf(activeId);
+                $("#" + activeId).removeClass("slide-active").addClass("slide");
+                var nextId;
+                if (x == 'left') {
+                    if (i == 0) {
+                        i = 3;
+                    }
+                    nextId = slides[i - 1];
+                } else if (x == 'right') {
+                    if (i == 2) {
+                        i = -1;
+                    }
+                    nextId = slides[i + 1];
+                }
+                $("#" + nextId).removeClass("slide").addClass("slide-active");
+            }
+        </script>
+    </body>
+</html>
