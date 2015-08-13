@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dancers' Symposium CMU Carnegie Mellon Dance">
+    <meta name="author" content="Madeline Rae Horowitz">
+    <title>Dancers' Symposium</title>
+
+    <!-- Favicon -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar-nav.css" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="#"><img src="img/logo.png" alt="Dancers' Symposium"/></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Photos &amp; Videos</a></li>
+          <li><a href="dancers.html">Dancers</a></li>
+          <li><a href="choreo.html">Choreographers</a></li>
+          <li><a href="direct.html">Directors</a></li>
+          <li><a href="audition.html">Auditions</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="dates.html">Production Calendar</a></li>
+          <li><a href="contact.html">Contact Info</a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>Production Calendar</h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div class="row">
+              <div class="col-md-12">
+                <h3>Spring 2014</h3>
+                <p>Checkpoint: 3/24/14, 3/25/14</p>
+                <p>Tech rehearsal (Act 1): 4/28/14</p>
+                <p>Tech rehearsal (Act 2): 4/29/14</p>
+                <p>Dress rehearsal: 5/1/14</p>
+                <p>Show 1: 5/2/14, 8pm</p>
+                <p>Show 2: 5/3/14, 8pm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>&copy; 2014 <a href="http://www.raemadeline.com/">Madeline Horowitz</a></p>
+        </div>
+      </div>
+      
+    </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>

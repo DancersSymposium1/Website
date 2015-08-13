@@ -129,8 +129,8 @@ nav > a:hover{
 }
 
 h1 {
-    font-family:  'Pacifico', 'Raleway', Consolas;
-    font-size:  2em;
+    font-family: 'Arvo', 'Raleway', Consolas;
+    font-size:  1.8em;
     color: #8effdf;
     line-height: 1.5em;
 }
@@ -166,7 +166,7 @@ p {
     background-color: black;
     opacity: 0.8;
     border-radius: 20px;
-    padding: 0px 10px 20px 10px;
+    padding: 10px;
 }
 
 .back-container {
@@ -208,11 +208,6 @@ figure > img {
     width: 130px;
 }
 
-li > figure > img:hover {
-    filter: gray;
-    -webkit-filter: grayscale(100%);
-}
-
 #choreographers, #directors {
     display: none;
 }
@@ -250,6 +245,10 @@ footer {
 
 .tall {
     min-height: 600px;
+}
+
+.taller {
+    min-height: 680px;
 }
 
 .arrows {
@@ -324,9 +323,9 @@ figure > figcaption {
     .back-container, .back-image {
         height: auto;
     }
-    #title {
-        font-size: 70px !important;
-}
+    .back-image {
+        background-attachment: scroll;
+    }
     #logo {
         display: none;
     }
@@ -335,7 +334,7 @@ figure > figcaption {
     }    
     nav > a {
         padding: 10px 15px;
-}
+    }
     #page-content {
         top: 80px;
     }
@@ -355,11 +354,11 @@ figure > figcaption {
         width: 65px;
     }
     #slide-container {
-        width: 280px;
+        width: 270px;
     }
     #slide-container > figure > img{
         width: 200px;
         height: auto;
-}
+    }
 
 }

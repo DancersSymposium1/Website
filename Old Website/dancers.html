@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dancers' Symposium CMU Carnegie Mellon Dance">
+    <meta name="author" content="Madeline Rae Horowitz">
+    <title>Dancers' Symposium</title>
+
+    <!-- Favicon -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar-nav.css" rel="stylesheet">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="#"><img src="img/logo.png" alt="Dancers' Symposium"/></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Photos &amp; Videos</a></li>
+          <li>
+            <a href="dancers.html">Dancers</a>
+            <ul>
+              <li><a href="#rights">Rights</a></li>
+              <li><a href="#responsibilities">Responsibilities</a></li>
+              <li><a href="#info">Information Packet</a></li>
+            </ul>
+          </li>
+          <li><a href="choreo.html">Choreographers</a></li>
+          <li><a href="direct.html">Directors</a></li>
+          <li><a href="audition.html">Auditions</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="dates.html">Production Calendar</a></li>
+          <li><a href="contact.html">Contact Info</a></li>
+        </ul>
+      </div>
+     <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>Dancers</h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div class="row">
+            <div class="col-md-12" id="rights">
+              <h3>Rights</h3>
+              <p>
+                Any individual directly affiliated with Carnegie Mellon who has paid their Student Activities fee is welcome to auditions regardless of background or dance style preference. In some cases, members of the University of Pittsburgh or other local communities may participate as well as long as they pay a semester worth of Student Activities fee to the HUB (to gain privilege such as using UC space through a student organization funded by the Student Senate). Experience is not necessary. All Dancers have the right to a fair audition process.
+              </p>
+              <p>
+                Once put in a dance, all the Dancers have a responsibility and a right to learn choreography and perform it on stage at the show. All Dancers have the right to fair treatment; in the case of any problem with fellow Dancers and/or the Choreographer(s), the Dancer should speak to the Choreographer. If this does not resolve the issue, the Dancer should turn to the Directors for guidance. All cases will be examined individually and thoroughly, and the Directors will make and notify dancers of the final decisions.
+              </p>
+            </div>
+            <div class="col-md-12" id="responsibilities">
+              <h3>Responsibilities</h3>
+              <p>
+                All Dancers must be present the day of auditions (unless they have contacted the Directors prior to the auditions and received permission due to special circumstances, they will be placed on the unassigned dancers list). They should arrive promptly and make sure to properly warm up. They will preview a short portion of each dance piece. The Directors will teach all Dancers approximately 32 counts of an audition piece, which will include a variety of styles while allowing each Dancer to add their own personality and show their performance abilities. Dancers will all perform on stage once, and all auditions will be videotaped. Dancers will be responsible for requesting to be put in certain dances through a form before dancing on stage, and then ranking the dances in order of their preference. No Dancer should ever personally request to be placed in a dance by a Choreographer, and likewise they should never be asked by a Choreographer to audition for a piece; if this occurs, then please notify the Directors.
+              </p>
+              <p>
+                If accepted into any dance, the Dancer is required to dedicate a minimum of 1 hour per week per dance to learning choreography. A Dancer can be in a maximum of 3 dances per semester (although this number may be adjusted on a semester-by-semester basis at the discretion of the Directors – exceptions included and are not limited to: senior solos, participation in outside organization pieces, and choreographing multiple pieces). The total number of dances that anyone can participate in is absolute maximum of 5 dances per semester. Dancers must attend all rehearsals, unless the Choreographer(s) are notified previously. They will also be required to participate in checkpoint, ticket sales, tech rehearsals, dress rehearsal and the show.
+              </p>
+              <p>
+                Being a Dancer is a privilege and if a Dancer agrees to be in a dance, he/she is making a commitment to his/her fellow Dancers, Choreographer, and the Dancers’ Symposium organization. If a Dancer does not follow the guidelines outlined in this constitution, or chooses to drop their dance at some point in the semester, they will be placed on a one-semester probation during which they will not be allowed to participate in the show. However, the Dancer will be allowed to stay in other pieces in order to prevent unfair consequences for other Choreographers. All Dancer drop cases will be examined by the Directing staff for any special circumstances, and the decisions will be notified to Dancer(s) and Choreographer(s) in person and in e-mail.
+              </p>
+            </div>
+            <div class="col-md-12" id="info">
+              <h3>Information Packet</h3>
+              <p>Please refer to the <a href="pdfs/DSDancerInformationSheetLayout.pdf">Dancer Information Packet</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>&copy; 2014 <a href="http://www.raemadeline.com/">Madeline Horowitz</a></p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>

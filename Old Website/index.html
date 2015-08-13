@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dancers' Symposium CMU Carnegie Mellon Dance">
+    <meta name="author" content="Madeline Rae Horowitz">
+    <title>Dancers' Symposium</title>
+
+    <!-- Favicon -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar-nav.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+      body {
+        background-color: black;
+      }
+
+      #wrapper {
+        position: absolute;
+        top: 0;
+      }
+
+      #sidebar-wrapper {
+        background: rgba(0,0,0,0.9);
+      }
+
+      .hover-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(0,0,0,0.9);
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .hover-box h3 {
+        margin-top: 0;
+      }
+
+      .hover-box p {
+        margin-bottom: 0;
+      }
+
+      .footer {
+        position: fixed;
+        bottom: 0;
+        right: 6px;
+        z-index: 10000;
+      }
+    </style>
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="#"><img src="img/logo.png" alt="Dancers' Symposium"/></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Photos &amp; Videos</a></li>
+          <li><a href="dancers.html">Dancers</a></li>
+          <li><a href="choreo.html">Choreographers</a></li>
+          <li><a href="direct.html">Directors</a></li>
+          <li><a href="audition.html">Auditions</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="dates.html">Production Calendar</a></li>
+          <li><a href="contact.html">Contact Info</a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="hover-box">
+          <h3>Upcoming Performances</h3>
+          <p>Spring 2014 show: May 2 &amp; 3 at 8pm</p>
+        </div>
+        <div class="footer">
+          <p>&copy; 2014 <a href="http://www.raemadeline.com/">Madeline Horowitz</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- BigVideo Dependencies -->
+    <script>window.jQuery || document.write('<script src="bower_components/jquery/jquery.min.js"><\/script>')</script>
+    <script src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+    <script src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+    <script src="http://vjs.zencdn.net/4.0/video.js"></script>
+
+    <!-- BigVideo -->
+    <script src="bower_components/BigVideo/lib/bigvideo.js"></script>
+
+    <!-- Demo -->
+    <script>
+      $(function() {
+            var BV = new $.BigVideo();
+            var vids = [
+                'vids/abby_katie_s13.mp4',
+                'vids/company_dress_s13.mp4',
+                'vids/mel_lisa_dress_s13.mp4',
+                'vids/sam_dress_s13.mp4'
+            ];
+            vids.sort(function() { return 0.5 - Math.random() }); // random order on load
+      BV.init();
+      BV.show(vids,{ambient:true});
+      });
+    </script>
+  </body>
+</html>

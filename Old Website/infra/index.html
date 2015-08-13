@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Infra Dance Company</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script type="text/javascript" src="jquery.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,500italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+        $(".slidingDiv").hide();
+        $(".show_hide").show();
+
+	$('.show_hide').click(function(){
+	$(".slidingDiv").slideToggle();
+	});
+	
+	function resizeVideo(){
+		var videoWidth = $(window).width();
+		var videoHeight = $(window).height() - 144;
+		
+		$("#videocontainer iframe").css({
+			marginTop: 0,
+			height: videoHeight,
+			width: videoWidth
+		});
+	}
+	
+	resizeVideo();
+	
+	$(window).resize(resizeVideo);
+
+});
+
+</script>
+<body>
+
+
+
+	<header>
+            <a href="index.html"><img src="images/logopng.png" id="logo"/></a>
+<!--        	<nav>
+            	<a href="#" id="menuicon"></a>
+            	<ul>
+                	<li><a href="about.html">About</a></li>
+                    <li><a href="#">Gallery</a>
+                   		 <ul>
+                        	<li><a href="https://www.dropbox.com/sh/nds82t2dxd98xy1/pSfkRkLnGa">Photos</a></li>
+                            <li><a href="video.html">Video</a></li>
+                        </ul>   
+                   </li>
+--><!--                    <li><a href="calendar.html">Calendar</a></li>-->
+<!--                    <li><a href="#">Members</a>
+                    	<ul>
+                        	<li><a href="company.html">Company</a></li>
+                            <li><a href="alumni.html">Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+-->            
+            <!-- <div id="topvisual">
+  					<img class="bottom" src="images/header/yellow.png" />
+ 					 <img class="top" src="images/header/pink.png"/>
+            </div> -->
+                	<div id="button"><a href="#" class="show_hide"><div id="menuicon"></div></a></div>
+	</header>
+
+
+       
+    	<section>
+         
+  				
+        
+        
+        
+
+     <div id="videocontainer">
+         <iframe src="http://www.youtube.com/embed/pZtIIYCOicI?rel=0" frameborder="0" allowfullscreen></iframe>
+     </div>
+        <div class="slidingDiv">
+<p> Our website is currently under construction. For now check us out on <a href="https://www.facebook.com/InfraDanceCompany">Facebook</a> and <a href="https://www.youtube.com/user/DSCompanyCMU">Youtube</a> or send us an email at <a href="mailto:infradancecompany@gmail.com?Subject=Hello%20again" target="_top">
+Infradancecompany@gmail.com</a>.</p></div> 
+        </div> 
+                        </section>
+
+    <footer>
+            <ul>
+                <li>© Lila Fagen 2014</li>
+                <li>Contact us at infradancecompany@gmail.com</li>
+                <li>
+                	<a href="https://www.facebook.com/InfraDanceCompany"><img src="images/fblogo.png"/></a>
+                	<a href="https://www.youtube.com/user/DSCompanyCMU"><img src="images/youtubelogo.png"/></a>    
+                </li>
+            </ul>    
+        </footer>  
+</body>
+</html>

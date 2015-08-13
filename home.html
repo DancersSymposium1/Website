@@ -11,9 +11,7 @@
         <title>CMU DS</title>
 
         <link rel="stylesheet" href="mainStyle.css">
-        <link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="Images\logo_icon.ico">
 
         <style>
@@ -39,18 +37,25 @@
             }
 
             #title {
-                font-family: 'Pacifico', Consolas, 'Lucida Console';
-                font-size:  110px;
+                font-family: 'Oswald', Consolas, 'Lucida Console';
+                font-size:  80px;
                 transition: all 0.5s;
                 color: white;
+                margin-bottom: 0;
+                opacity:  0.45;
             }
             
             #title:hover { 
-                opacity:  0.6;
+                opacity: 1;
                 color:  #c8c8c8;
                 transition: all 0.5s;
             }
-            
+
+            @media (max-width:480px) {
+                #title {
+                    font-size: 60px;
+                }
+            }
         </style>
     </head>
 
@@ -58,8 +63,10 @@
         <div class="background-container" id="home_background"></div>
         <div class="background-container" id="background-title">
             <div id="title-container">
-                <a  id="title" href="about.html">cmu dancers' symposium</a>
+                <a id="title" href="about.html">CMU DANCERS' SYMPOSIUM</a>
+                
             </div>
+            
         </div>
 
         <!-- Javascripts-->

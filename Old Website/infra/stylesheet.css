@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import 'reset.css';
+
+body, html{
+	width: 100%;
+	height: 100%;	
+	position: relative;
+}
+
+body{
+	background: #000;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+
+body section{
+	width: 100%;
+	height: 81%;
+	margin: 0 auto;
+			
+}
+
+/*-------------------------------------------------HEADER-------------------*/
+
+header{
+	position: fixed;
+	background: #09C url(images/header/test5.png) left;
+	transition: 10s ease-in-out  ;
+	z-index: 4;
+	width: 100%;
+	line-height: 0;
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
+	border-bottom: 6px black solid;
+}
+
+header:hover {
+	background: #CF3 url(images/header/test5.png) right;
+	transition: 10s ease-in-out ;
+}
+
+#topvisual{
+	position: absolute;	
+}
+
+#logo{
+	position: relative;	
+	padding: 10px;
+}
+
+
+header nav{
+	width: 100%;
+	margin: 0 auto;	
+	background: #FFF;
+	background: rgba(255, 255, 255, 0.7);
+	text-size: 1em;
+	line-height: 1em;
+}
+
+#menuicon {
+  position: absolute;
+}
+
+#menuicon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1.6em;
+  height: 0.2em;
+  background: black;
+  box-shadow: 
+    0 0.55em 0 0 black,
+    0 1.1em 0 0 black;
+}
+
+.show_hide {
+	display:none;
+	position: absolute;
+	top:25%;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-weight: 400;	
+	right: 15%;
+	padding: 30px;
+}
+
+/*-------------------------------------------------SECTION-------------------*/
+.slidingDiv {
+	height:130px;
+	width: 300px;
+	background-color: rgba(255, 255, 255, 0.6);
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-top: 0;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+}
+
+.slidingDiv p{
+	color: #000;	
+	padding: 20px;
+	text-align: left;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-weight: 400;
+	line-height: 1.7em;
+}
+
+.slidingDiv a{
+	color: #000;	
+	
+}
+
+section {
+	padding: 0px 0 40px 0;
+	width: 100%;
+	position: relative;
+	top: 147px;
+	font-size: .8em;
+	line-height: 1.3em;
+	text-align: center;
+	font-family: 'Roboto', helvetica, arial, sans-serif;
+	font-weight: 400;
+	color: #000;
+	background: #000;
+}
+
+#container{
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+}
+#container p{
+	position: relative;
+	max-width: 500px;
+	margin: 0 auto;
+}
+#container a{
+	color: #000;
+}
+
+#videocontainer {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+	border-bottom: 5px #000 solid;
+	padding-bottom: 56.25%
+}
+
+#videocontainer iframe{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	object-fit: contain;
+}
+
+/*-------------------------------------------------FOOTER-------------------*/
+
+footer{
+	border-top: 4px black solid;
+	background: #fff;
+	position: fixed;	
+	width: 100%;
+	bottom: 0;
+}
+
+footer ul{
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 1em;
+}
+
+footer img{
+	height: 10%;	
+}
+
+footer ul li{
+	display: inline-block;
+	margin: 6px 20px 5px 20px;
+	
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------TABLET-------------------*/
+@media screen and (max-width: 750px) {
+
+section #container{
+	max-width: 500px;	
+}
+
+aside{
+	display: none;	
+}
+
+
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------PHONE-------------------*/
+@media only screen and (max-width: 480px) {
+
+
+body{
+	width: 100%;
+}
+
+header{
+	/*margin: 0 auto;
+	padding: 0 auto;
+	text-align: center;
+	background: #09C url(images/header/test2.png) left;
+	transition: 20s ease-in-out  ;
+	background: #09C;*/
+	position: fixed;
+	height: 110px;
+	/*z-index: 4;
+	width: 100%;
+	line-height: 0;*/
+}
+
+/*header {
+	background: #cf3 url(images/header/test2.png) right;
+	transition: 20s ease-in-out ;
+}
+
+#topvisual{
+	position: absolute;	
+	height: 50px;
+	display: none;
+}
+
+
+*/
+#logo{
+	position: relative;
+	display: inline-block;
+	height: 80%;
+	left: 10px;
+}
+
+section{
+	top:116px;
+}

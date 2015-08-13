@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dancers' Symposium CMU Carnegie Mellon Dance">
+    <meta name="author" content="Madeline Rae Horowitz">
+    <title>Dancers' Symposium</title>
+
+    <!-- Favicon -->
+    <link rel="icon" 
+      type="image/png" 
+      href="img/favicon.png">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/sidebar-nav.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+  
+    <div id="wrapper">
+      
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="#"><img src="img/logo.png" alt="Dancers' Symposium"/></a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Photos &amp; Videos</a></li>
+          <li><a href="dancers.html">Dancers</a></li>
+          <li><a href="choreo.html">Choreographers</a></li>
+          <li><a href="direct.html">Directors</a></li>
+          <li><a href="audition.html">Auditions</a></li>
+          <li>
+            <a href="community.html">Community</a>
+            <ul>
+              <li><a href="#outreach">Outreach</a></li>
+              <li><a href="#infra">Infra</a></li>
+              <li><a href="#soulstylz">Soulstylz</a></li>
+            </ul>
+          </li>
+          <li><a href="dates.html">Production Calendar</a></li>
+          <li><a href="contact.html">Contact Info</a></li>
+        </ul>
+      </div>
+          
+      <!-- Page content -->
+      <div id="page-content-wrapper">
+        <div class="content-header">
+          <h1>Community</h1>
+        </div>
+        <!-- Keep all page content within the page-content inset div! -->
+        <div class="page-content inset">
+          <div class="row">
+            <div class="col-md-12" id="outreach">
+              <h3>Outreach</h3>
+              <p>
+                Dancers’ Symposium is committed to giving back to the Pittsburgh community not only through performance, but also through teaching. Members of Dancers’ Symposium may volunteer to teach on-campus workshops, participate in on-campus workshops hosted by local dance companies, volunteer to assist in teaching a dance class to daycare children on campus, or participate in any other events directors are notified of for the Dancers' Symposium community.
+              </p>
+            </div>
+          </div>
+          <!-- <div class="row"> -->
+            <div class="col-md-6" id="infra">
+              <!-- INFRA -->
+              <a href="https://www.facebook.com/InfraDanceCompany" target="_blank">
+                <h3>Infra Dance Company</h3>
+                <img src="img/infra.jpg" alt="Infra" class="img-responsive" />
+              </a>
+            </div>
+            <div class="col-md-6" id="soulstylz">
+              <!-- SOULSTYLZ -->
+              <a href="https://www.facebook.com/soulstylzdance" target="_blank">
+                <h3>Soulstylz Dance</h3>
+                <img src="img/soulstylz.jpg" alt="soulstylz" class="img-responsive" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>&copy; 2014 <a href="http://www.raemadeline.com/">Madeline Horowitz</a></p>
+        </div>
+      </div>
+      
+    </div>
+  
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Put this into a custom JavaScript file to make things more organized -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
+  </body>
+</html>
